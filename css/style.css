@@ -19,7 +19,130 @@ box-shadow: 0px 0px 8px 0px #000000;
 /* Adds the transparent background */
 background-color: rgba(1, 1, 1, 0.8);
 color: rgba(1, 1, 1, 0.8);
+z-index: 999;
 }
+
+#navigation a {
+font-size: 14px;
+padding-left: 15px;
+padding-right: 15px;
+color: white;
+text-decoration: none;
+}
+#navigation a:hover {
+color: grey;
+}
+
+.row{
+	height:200px;
+	background-image: url();
+	background-size: cover;
+}
+
+
+.slider {
+
+  max-width:  100%;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  margin-bottom:0px;
+  margin-top: 30px;
+  text-align: center;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height:500px;
+  margin-bottom: 50px;
+}
+.slide1 {
+  background: url(../assets/2.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 30s infinite;
+-webkit-animation:fade 30s infinite;
+
+} 
+.slide2 {
+  background: url(../assets/11.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 30s infinite;
+-webkit-animation:fade2 30s infinite;
+}
+.slide3 {
+    background: url(../assets/7.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 30s infinite;
+-webkit-animation:fade3 30s infinite;
+}
+
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+
+#about{
+
+text-align:center;
+
+}
+
+.head1 ,.head2 ,.head3 {
+
+margin-top: 100px;
+font-weight: 20px;
+
+}
+
+.tag-line{
+text-align: left;
+font-size: 2.3em;
+margin-left: 50px;
+width:500px;
+color:white;
+
+}
+
+.sub-tag-line{
+		text-align: right;
+		margin-right: 50px;
+		font-size: 1.8em;	
+}
+
+
+.head1 .sub-tag-line{
+	color:#FFEA2B;
+}
+
+
+.head2 .sub-tag-line{
+	color:#FF0000;
+	}
+
+.head3 .sub-tag-line{
+	color: #FF66CC;
+}
+
+
 /*css hover effect*/
 .demo-3 {
     position:relative;
@@ -27,7 +150,8 @@ color: rgba(1, 1, 1, 0.8);
     height:200px;
     overflow:hidden;
     float:left;
-    margin-right:20px
+    
+    margin-left:20px;
 }
 .demo-3 figure {
     margin:0;
@@ -98,18 +222,26 @@ color: rgba(1, 1, 1, 0.8);
     transform:rotateY(0)
 }
 
-#navigation a {
-font-size: 14px;
-padding-left: 15px;
-padding-right: 15px;
-color: white;
-text-decoration: none;
-}
-#navigation a:hover {
-color: grey;
-}
+
 
  #map {
-        width: 500px;
+        width: 100%;
         height: 400px;
       }
+
+  .conact{
+  	margin-left:800px;
+  	
+  	width:400px;
+  }
+
+ #about{
+ 	margin-top: 50px;
+ 	margin-bottom: 100px;
+
+ }
+
+ #about p{
+ 	font-size: 2em;
+ 	font-weight: 20px;
+ }

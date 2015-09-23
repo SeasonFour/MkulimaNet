@@ -1,44 +1,117 @@
 <!Doctype html>
 <html>
-<head>
+<!-- The head-->
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	<head>
 
-<!--bootstrap links-->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap 101 </title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<link href="css/style.css" rel="stylesheet">
 
-	
+    <!--font awesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
+   <!--Animate css -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 
 
 	</head>
   <!-- The body-->
-<body>
-     <div id="navigation">
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">products</a>
-		<a href="#">Contacts</a>
-		<a href="#">Location</a>
-		
-	</div>
-	<!--about-->
-	<div id="about">
-	<section>About</section>
-	</div>
-    <br><br><br>
-	<!--products-->
 
-    <h1 style="text-align:center;">Products And Services</h1>
-	<!--imageone-->
-	<ul class="demo-3">
+          	<div id="navigation">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">PRODUCTS </a>
+          <a href="#">CONTACTS</a>
+          <a href="#">LOCATION</a>
+
+          </div>
+          
+ <!-- The slider-->
+
+        <div class='slider'>
+
+
+          <div class='slide1'>
+
+              <div class=" head1">
+
+                 <div class="tag-line animated zoomInRight ">
+                    <p> Depending on your style,we meet your needs.Redesign the look of your home;</p>
+                </div>
+
+                  <div class="sub-tag-line animated zoomInRight ">
+                    <p>Renovate your backyard with amazing landscaping</p>
+                  </div>
+            </div>
+
+            
+          </div>
+
+          <div class='slide2'>
+            
+            <div class=" head2">
+              
+                 <div class="tag-line animated zoomInRight ">
+                    <p>Depending on your style,we meet your needs.Redesign the look of your home; </p>
+                </div>
+
+                  <div class="sub-tag-line animated zoomInRight ">
+                    <p> Improve the look and smell of your kitchen <br> while bettering your culinary skills with exotic herbs</p>
+                  </div>
+            </div>
+
+
+
+
+          </div>
+
+          <div class='slide3'>
+            
+          <div class=" head3">
+              
+                 <div class="tag-line animated zoomInRight ">
+                    <p>Depending on your style,we meet your needs.Redesign the look of your home;</p>
+                </div>
+
+                  <div class="sub-tag-line animated zoomInRight ">
+                    <p>Space is not an issue </p>
+                  </div>
+            </div>
+
+
+          </div>
+         
+        </div>
+
+    <!--About Section-->
+
+    <div id="about">
+    <h1> ABOUT US</h1>
+    <p>MkulimaNet is where you can buy herbs, and an array of garden plants on this site or pickup directly from our  garden nursery.We also offer landscaping services  to make idle spaces in your home awesomewith an array of artistic potted plants to exotic herbs.</p>
+
+    </div>
+
+
+
+
+<!--products and services-->
+           
+
+    <h1 style="text-align:center;">PRODUCTS AND SERVICES</h1>
+  <!--imageone-->
+  <ul class="demo-3">
     <li>
         <figure>
             <img src="assets/rose.jpg" alt="" style="width:300px;" />
@@ -131,39 +204,63 @@
     </li>
 </ul>
 
+          
 
 
-<br><br><br>
-  
-    <!--Contact and map-->
-    <div id="map"></div>
+<!--Contact and map-->
+
+ <div id="contact">
 
 
-    
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.806064063809!2d36.944843500000026!3d-1.1943440999999886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f8e4b8ad947%3A0x9504ecc7473b7b93!2sKahawa+Sukari!5e0!3m2!1sen!2ske!4v1443005982493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+
+
+        <div id=" form-group " class="conact">
+
+        <h3> CONTACT US</h3>
+          <form>
+
+
+            <label for="inputEmail">Name</label>
+
+            <input type="email" class="form-control" id="inputEmail" placeholder="Name">
+
+        </div>
+
+        <div class="form-group conact">
+
+            <label for="inputPassword">Email</label>
+
+            <input type="password" class="form-control" id="inputPassword" placeholder="Email">
+
+        </div>
+
+        <div class="checkbox conact">
+
+            <label><input type="checkbox"> Remember me</label>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary conact">Submit</button>
+
+    </form>
+    </div>
+	 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	
-<script type="text/javascript" src="js/main.js"></script>
-
-
-
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 	
+    <script type="text/javascript">{$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2} </script>
+
+
 	</body>
-
 </html>
