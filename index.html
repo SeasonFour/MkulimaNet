@@ -27,20 +27,25 @@
 
 
 	</head>
+
   <!-- The body-->
+  
+
+
 
           	<div id="navigation">
-          <a href="#">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">PRODUCTS </a>
-          <a href="#">CONTACTS</a>
-          <a href="#">LOCATION</a>
+           <span style="text-align:left;"> <a href="#home">MkulimaNet</a></span>
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#product">PRODUCTS </a>
+          <a href="#contact">CONTACTS</a>
+          <a href="#map">LOCATION</a>
 
           </div>
           
  <!-- The slider-->
 
-        <div class='slider'>
+        <div id="home" class='slider'>
 
 
           <div class='slide1'>
@@ -108,7 +113,7 @@
 
 <!--products and services-->
            
-
+<div id="product">
     <h1 style="text-align:center;">PRODUCTS AND SERVICES</h1>
   <!--imageone-->
   <ul class="demo-3">
@@ -203,8 +208,7 @@
         </figure>
     </li>
 </ul>
-
-          
+</div>          
 
 
 <!--Contact and map-->
@@ -213,7 +217,7 @@
 
 
     <div id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.806064063809!2d36.944843500000026!3d-1.1943440999999886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f8e4b8ad947%3A0x9504ecc7473b7b93!2sKahawa+Sukari!5e0!3m2!1sen!2ske!4v1443005982493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.806064063809!2d36.944843500000026!3d-1.1943440999999886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f8e4b8ad947%3A0x9504ecc7473b7b93!2sKahawa+Sukari!5e0!3m2!1sen!2ske!4v1443005982493" width="700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </div>
 
@@ -221,7 +225,7 @@
 
         <div id=" form-group " class="conact">
 
-        <h3> CONTACT US</h3>
+       <center> <h3> CONTACT US</h3></center>
           <form>
 
 
@@ -249,14 +253,47 @@
 
     </form>
     </div>
+
+    <br>
+    <br>
 	 
+    <!-- Social media contact information   --> 
+      <div class="linksection">
+        
+          
+          <a href=""> <img src= "http://w3newbie.com/wp-content/uploads/facebook1.png"/></a> 
+          <a href=""> <img src= "http://w3newbie.com/wp-content/uploads/googleplus.png"/></a> 
+          <a href=""> <img src= "http://w3newbie.com/wp-content/uploads/youtube1.png"/></a> 
+          <a href=""> <img src= "http://w3newbie.com/wp-content/uploads/twitter1.png"/></a> 
+      </div>
+   
+
+      <!-- copyright paragraph   -->
+      <div class="copyright">
+        <center><p>&MkulimaNet,2015</p><center>
+      </div>
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});</script>
 	
 	
     <script type="text/javascript">{$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2} </script>
