@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
+<<<<<<< HEAD
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -49,4 +50,93 @@
 	</div>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
+=======
+<!-- The head-->
+
+	<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap 101 </title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  	<link href="css/style.css" rel="stylesheet">
+
+    <!--font awesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+	</head>
+  <!-- The body-->
+
+	<div id="navigation">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Products </a>
+<a href="#">Contacts</a>
+<a href="#">Location</a>
+
+</div>
+
+
+<div id="About">
+	
+
+</div>
+
+<!--products and services-->
+<div id="products">
+      <div class="row">
+        <ul class="demo-3">
+          <li>
+            <figure>
+            <img src="assets/1.jpg" alt=""/>
+            <figcaption>
+            <h2>This is a cool title!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+            </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+</div>
+
+
+
+    <!--Contact and map-->
+    <div id="map"></div>
+
+
+    
+	
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	
+	</body>
+>>>>>>> 9f1150223b844bbc16428158a07b645eb9181f2c
 </html>
